@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Home</title>
+        <style>
+            li{
+                display:inline-block;
+                margin-bottom:20px;
+                height:20px;
+                font-size: 30px;
+                padding-right: 20px;
+            }
+            h1
+            {
+                color:purple
+            }
+            p{
+                color:green;
+                font-size:30px;
+            }
+            .id1{
+                color:blue
+            }
+            
+             </style>
+    </head>
+    <body style="background-color: yellow;color:green;">
+        <header style=" height:80px;font-size: 60px;text-align:center;background-color:red;color:purple">New Year
+        </header>
+        <nav style="background-color: darkblue;">
+            <center>
+                    <ul>
+                        <li><a href="Home.html"style="color:white;">Home</a></li>
+                        <li><a href="Celebration.html"style="color:white;">Celebration</a></li>
+                        <li><a href="Videos.html"style="color:white;">Videos</a></li>
+                        <li><a href="Resolution.html"style="color:white;">Resolution</a></li>
+                        <li><a href="Contact Us.html"style="color:White;">Contact Us</a></li>
+                    </ul>
+            </center>
+        </nav>
+        <h1>What are New year Resolutions?</h1>
+        <p>
+            A New Year's resolution is a tradition, most common in the Western World but also found in the Eastern World, in which a person resolves to continue good practices, change an undesired trait or behavior, accomplish a personal goal, or otherwise improve their life at the start of a new year.
+        </p>
+        <h1>Some New Year resolutions</h1>
+        <p id="id1"></p>
+        <button onclick="new_year1();">Resolution for Kids</button>
+        <button onclick="new_year2();">Resolution for Teens</button>
+        <button onclick="new_year3();">Resolution for Adults</button>
+        <button onclick="year();">Your Resolution</button>
+        <script type="text/javascript">
+        function new_year1(){
+            document.getElementById("id1").innerHTML="I will keep my room clean.<br>I will keep good grades in school.<br>I will eat less snacks.I will have a fruit or veggie with every meal.<br>I will try new foods.<br>I will go to bed at a decent hour.<br>I will exercise for at least a half hour each day.";
+        }
+        function new_year2(){
+            document.getElementById("id1").innerHTML="Start Taking Better Care of Your Skin<br>Eat at Least One Serving of Fruit and Veggies Every Day<br>Be Nicer to Your Sister/Brother<br>Reach Out to a Friend You Lost Contact With<br>Clean Your Bedroom<br>Get More Sleep"
+        }
+        function new_year3(){
+            document.getElementById("id1").innerHTML="Focus on a Passion, Not the Way You Look<br>Work out to feel good, not be thinner.<br>Stop gossiping.<br>Do Random Acts of Kindness<br>Turn off your phone one night a week.<br>Save more money/spend less money"
+        }
+        function year(){
+            var year=prompt("Enter your New year Resolution")
+            alert("Good Luck with your Resolution")
+        }
+        </script>
+        </body>
+        </html>
